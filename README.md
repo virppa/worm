@@ -1,5 +1,6 @@
 # worm
 
+### https://virppa.github.io/worm/
 A very quickly made js snake game played with arrow keys.
 
 ## TODO
