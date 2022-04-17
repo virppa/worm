@@ -2,7 +2,7 @@
 
 A very quickly made js snake game played with arrow keys.
 
-##TODO
+## TODO
 - Implement check for 180 degree turning
 - Maybe add walls/maze
 - Implement score system - show current points and max achieved
