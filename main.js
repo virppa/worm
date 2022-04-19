@@ -5,8 +5,8 @@ window.onload = function() {
     setInterval(game, 1000/15);
 }
 
-let gridSize = 20;
-let tileCount = 20;
+const gridSize = 20;
+const tileCount = 20;
 
 let speedX = 0;
 let speedY = 0;
