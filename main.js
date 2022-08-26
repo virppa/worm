@@ -1,5 +1,5 @@
 window.onload = function () {
-  canvas = document.getElementById("canvas");
+  let canvas = document.getElementById("canvas");
   context = canvas.getContext("2d");
   document.addEventListener("keydown", keyPush);
   setInterval(game, 1000 / 15);
