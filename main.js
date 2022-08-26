@@ -18,28 +18,32 @@ let tail = 5;
 let appleX = 15;
 let appleY = 15;
 
+function wormIsNotMoving() {
+  return (speedX == 0 && speedY == 0)
+}
+
 function keyPush(event) {
   switch (event.keyCode) {
     case 37:
-      if (speedY != 0 || (speedX == 0 && speedY == 0)) {
+      if (speedY != 0 || wormIsNotMoving()) {
         speedX = -1;
         speedY = 0;
       }
       break;
     case 38:
-      if (speedX != 0 || (speedX == 0 && speedY == 0)) {
+      if (speedX != 0 || wormIsNotMoving()) {
         speedX = 0;
         speedY = -1;
       }
       break;
     case 39:
-      if (speedY != 0 || (speedX == 0 && speedY == 0)) {
+      if (speedY != 0 || wormIsNotMoving()) {
         speedX = 1;
         speedY = 0;
       }
       break;
     case 40:
-      if (speedX != 0 || (speedX == 0 && speedY == 0)) {
+      if (speedX != 0 || wormIsNotMoving()) {
         speedX = 0;
         speedY = 1;
       }
