@@ -25,25 +25,25 @@ function wormIsNotMoving() {
 function keyPush(event) {
   switch (event.keyCode) {
     case 37:
-      if (speedY != 0 || wormIsNotMoving()) {
+      if (speedY !== 0 || wormIsNotMoving()) {
         speedX = -1;
         speedY = 0;
       }
       break;
     case 38:
-      if (speedX != 0 || wormIsNotMoving()) {
+      if (speedX !== 0 || wormIsNotMoving()) {
         speedX = 0;
         speedY = -1;
       }
       break;
     case 39:
-      if (speedY != 0 || wormIsNotMoving()) {
+      if (speedY !== 0 || wormIsNotMoving()) {
         speedX = 1;
         speedY = 0;
       }
       break;
     case 40:
-      if (speedX != 0 || wormIsNotMoving()) {
+      if (speedX !== 0 || wormIsNotMoving()) {
         speedX = 0;
         speedY = 1;
       }
@@ -79,7 +79,7 @@ function game() {
       gridSize - 2,
       gridSize - 2
     );
-    if (trail[i].x == playerX && trail[i].y == playerY) {
+    if (trail[i].x === playerX && trail[i].y === playerY) {
       tail = 5;
     }
   }
@@ -88,7 +88,7 @@ function game() {
     trail.shift();
   }
 
-  if (appleX == playerX && appleY == playerY) {
+  if (appleX === playerX && appleY === playerY) {
     tail++;
     appleX = Math.floor(Math.random() * tileCount);
     appleY = Math.floor(Math.random() * tileCount);
