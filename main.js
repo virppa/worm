@@ -19,7 +19,7 @@ let appleX = 15;
 let appleY = 15;
 
 function wormIsNotMoving() {
-  return (speedX == 0 && speedY == 0)
+  return (speedX === 0 && speedY === 0)
 }
 
 function keyPush(event) {
